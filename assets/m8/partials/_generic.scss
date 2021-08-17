@@ -1,0 +1,30 @@
+/* workaround until default values can be overridden without touching the bulma files */
+html body {
+  background-color: $white;
+  font-family: $font-family;
+}
+
+.is-white {
+  color: $white;
+
+}
+
+.is-light-blue {
+  color: $light-blue;
+}
+
+.is-blue {
+  color: $blue;
+}
+
+.is-dark-blue {
+  color: $dark-blue;
+}
+
+.is-blue-accent {
+  color: $blue-accent;
+}
+
+.is-brown-accent {
+  color: $brown-accent;
+}

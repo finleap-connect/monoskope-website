@@ -1,0 +1,28 @@
+{{- $inServerMode := .Site.IsServer }}
+
+{{- $style        := "style.sass" }}
+{{- $variables    := "m8/variables.sass" }}
+{{- $cssTarget    := "css/style.css" }}
+{{- $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
+{{- $sassVars     := resources.Get $variables }}
+{{- $sassVars      = $sassVars | resources.ExecuteAsTemplate "variables.sass" . }}
+{{- $sassStyle    := resources.Get $style }}
+{{- $sass         := slice $sassVars $sassStyle | resources.Concat $style }}
+
+{{- $fontName     := .Site.Params.font.name | default "Open Sans" }}
+{{- $fontFace     := replace $fontName " " "+" }}
+{{- $fontSizes    := delimit (.Site.Params.font.sizes | default (slice 300 400 600 700)) "," }}
+{{- $fontUrl      := printf "https://fonts.googleapis.com/css?family=%s:%s" $fontFace $fontSizes }}
+<link rel="icon" type="image/svg+xml" href="{{ "images/favicon.svg" | relURL }}">
+<link rel="alternate icon" type="image/png" href="{{ "images/favicon.png" | relURL }}" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8cd5da">  
+<link href="{{ $fontUrl }}" rel="stylesheet">
+{{- if $inServerMode }}
+{{- $css := $sass | toCSS $cssOpts }}
+<link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}">
+{{- else }}
+{{- $css := $sass | toCSS $cssOpts | minify | fingerprint }}
+<link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- end }}
+<link rel="stylesheet" type="text/css" href="{{ "css/icons.css" | relURL }}">
+<!-- <link rel="stylesheet" type="text/css" href="{{ "css/debug.css" | relURL }}"> -->

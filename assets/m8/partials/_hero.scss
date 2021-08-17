@@ -1,0 +1,29 @@
+/* ==========================================================================
+Hero styles
+========================================================================== */
+
+.hero {
+    background: $hero-style;
+}
+
+.hero-body {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .title {
+        color: $dark-blue;
+        &.is-bold {
+            font-weight: 900;
+        }
+    }
+    .subtitle {
+        &.is-muted {
+            color: $blue;
+        }
+    }
+}
+
+.hero-foot {
+    img.partner-logo {
+        height: 70px;
+    }
+}
