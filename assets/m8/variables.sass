@@ -1,0 +1,19 @@
+// ========= Color =========
+
+$white: #{{ .Site.Params.colors.white }};
+
+$light-blue: #{{ .Site.Params.colors.lightBlue }};
+$blue: #{{ .Site.Params.colors.blue }};
+$dark-blue: #{{ .Site.Params.colors.darkBlue }};
+
+$blue-accent: #{{ .Site.Params.colors.blueAccent }};
+$brown-accent: #{{ .Site.Params.colors.brownAccent }};
+
+// ========= Fonts =========
+
+$font-family: {{ .Site.Params.font.name }};
+
+// ========= Images =========
+
+$hero-style: url({{ printf "/images/illustrations/style/%s.svg" .Site.Params.hero.style | relURL }}) no-repeat bottom;
+$section-style-2: url({{ printf "/images/illustrations/style/%s.svg" .Site.Params.section2.style | relURL }}) no-repeat top;

@@ -1,0 +1,209 @@
+baseURL: https://monoskope.io/
+languageCode: en-us
+title: Monoskope
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description: Developer Self-Service Across Clusters
+  # navbarlogo:
+  # # Logo (from static/images/logos/___)
+  #   image: logos/monoskope.svg
+  #   link: /
+  navbarlogoText: 
+    text: Monoskope
+    link: /
+  font:
+    name: "Roboto"
+    sizes: [100,300,400,500,700,900]
+  colors:
+    white: f9fdfd
+    lightBlue: 8cd5da
+    blue: 7eb5b7
+    darkBlue: 698189
+    blueAccent: 079da7
+    brownAccent: ae7c47
+  hero:
+    # Main hero title
+    title: Developer Self-Service Across Clusters
+    # Hero subtitle (optional)
+    subtitle: manage and operate Kubernetes multi-cluster environment.
+    # Button text
+    buttontext: Get started
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Hero image (from static/images/___)
+    image: logos/m8.svg
+    # Footer bg (from static/images/illustrations/style/___.svg)
+    style: waves
+    # Footer logos (from static/images/logos/clients/___.svg)
+    # clientlogos:
+    # - systek
+    # - tribe
+    # - kromo
+    # - infinite
+    # - gutwork
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Home
+    url: /
+  - title: Docs
+    url: /
+  - title: Community
+    url: /
+  # - title: Example
+  #   sublinks:
+  #   - title: Dropdown item
+  #     url: /
+  #   - title: Dropdown item
+  #     url: /
+  #   - title: Dropdown item
+  #     url: /
+  - title: Get started
+    url: /
+    button: true
+  # sidebar:
+  #   # Logo (from /images/logos/___.svg)
+  #   logo: fresh-square
+  #   sections:
+  #   - title: User
+  #     icon: user
+  #     links:
+  #     - text: Profile
+  #       url: /
+  #     - text: Account
+  #       url: /
+  #     - text: Settings
+  #       url: /
+  #   - title: Messages
+  #     icon: envelope
+  #     links:
+  #     - text: Inbox
+  #       url: /
+  #     - text: Compose
+  #       url: /
+  #   - title: Images
+  #     icon: image
+  #     links:
+  #     - text: Library
+  #       url: /
+  #     - text: Upload
+  #       url: /
+  #   - title: Settings
+  #     icon: cog
+  #     links:
+  #     - text: User settings
+  #       url: /
+  #     - text: App settings
+  #       url: /
+  section1:
+    title: Meet Monoskope
+    # subtitle: And we know it
+    info:
+      textBlocks:
+        - Monoskope (short m8 spelled "mate") implements the management and operation of tenants, users and their roles in a Kubernetes multi-cluster environment.
+        - It fulfills the needs of operators on the clusters as well as the needs of developers using the cloud infrastructure provided by the operators.
+      lernMore:
+        - title: Monoskope Architecture
+          link: /
+    features:
+    - title: Powerful CLI
+      text: It gives your developers a front-end to your internal platform for running Kubernetes.
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: terminal
+    - title: Self-Service
+      text: It allows developers to request what they need to be productive and run application workloads while avoiding cognitive overload.
+      icon: self_service
+    - title: Modularity
+      text: It is designed to be extendable to allow for integration with your existing components.
+      icon: modularity
+  section2:
+    title: Practical Features
+    # section bg (from static/images/illustrations/style/___.svg)
+    style: section_top
+    # subtitle: with great responsibility
+    tiles:
+    - title: Secure by default
+      icon: dex
+      text: zero trust, zero touch credentials Flexible, enterprise-ready authentication through Dex
+      url: /
+    - title: Auditable by design
+      icon: eventstore
+      text: For ANY and ALL changes to the configuration a record of who changes what and when is kept. The audit record is a first class feature and not some logging afterthought.
+      url: /
+    - title: Easy installation
+      icon: helm
+      text: through Helm charts to any vanilla Kubernetes cluster
+      url: /
+  # section3:
+  #   title: One platform
+  #   subtitle: To rule them all
+  #   image: illustrations/mockups/app-mockup.png
+  #   buttonText: Get started
+  #   buttonLink: "#"
+  # section4:
+  #   title: Our Clients love us!
+  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+  #   clients:
+  #   - name: Irma Walters
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Accountant
+  #     img: 1
+  #   - name: John Bradley
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Financial Analyst
+  #     img: 2
+  #   - name: Gary Blackman
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: HR Manager
+  #     img: 3
+  # section5: true
+  footer:
+    # Logo (from /images/logos/___)
+    # logo: fresh-white-alt.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com
+      # Icons are from Font Awesome
+      icon: github
+    - link: https://slack.com
+      icon: slack
+    - link: https://stackoverflow.com
+      icon: stack-overflow
+    bulmalogo: false
+    quicklinks:
+      column1:
+        title: "Project"
+        links:
+        - text: Quick start guide
+          link: /
+        - text: Contribution Guide
+          link: /
+        - text: Features
+          link: /
+      column2:
+        title: "Docs"
+        links:
+        - text: API
+          link: /
+        - text: charts
+          link: /
+      column3:
+        title: "Community"
+        links:
+        - text: Logos & Art
+          link: /
+    copyright: © Monoskope Authors 2021 | Documentation distributed under ????
