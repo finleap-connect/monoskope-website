@@ -206,4 +206,8 @@ params:
         links:
         - text: Logos & Art
           link: /
-    copyright: © Monoskope Authors 2021 | Documentation distributed under ????
+    copyright: 
+      text: © Monoskope Authors 2021
+      links:
+        - text: Impressum
+          link: /impressum

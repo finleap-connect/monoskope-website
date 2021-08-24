@@ -56,8 +56,13 @@
         </div>
       </div>
     </div>
-    <div class="block is-dark-blue">
-      <p>{{ $copyright }}</p>
+    <div class="block has-text-centered is-dark-blue">
+      {{ $copyright.text }}
+      {{- range $copyright.links }}
+        <a class="is-dark-blue" href="{{ .link }}">
+          • {{ .text }}
+        </a>
+      {{- end }}
     </div>
   </div>
 </footer>
