@@ -20,8 +20,6 @@ Frank Kebsch, Patrick Dittmer, Andreas Reuß
 
 {{% title3 "Registereintrag" %}}
 
-<br>
-
 {{% subtitle5 "Eintragung im Handelsregister" %}}
   
 Registergericht: Amtsgericht Hamburg  

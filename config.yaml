@@ -176,13 +176,13 @@ params:
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com
+    - link: https://github.com/finleap-connect/monoskope
       # Icons are from Font Awesome
       icon: github
-    - link: https://slack.com
+    - link: https://finleap-connect.slack.com/archives/C02H68HM4SG
       icon: slack
-    - link: https://stackoverflow.com
-      icon: stack-overflow
+    # - link: https://stackoverflow.com
+    #   icon: stack-overflow
     bulmalogo: false
     quicklinks:
       column1:
@@ -207,7 +207,7 @@ params:
         - text: Logos & Art
           link: /
     copyright: 
-      text: © Monoskope Authors 2021
+      text: © Monoskope Authors 2022
       links:
-        - text: Impressum
-          link: /impressum
+        - text: Imprint
+          link: /imprint
