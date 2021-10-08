@@ -1,5 +1,5 @@
 # M8 Website
 
-## http://monoskope.io/
+## <https://monoskope.io/>
 
-simple yet informational website for Monoskope outlining what it is, why we build it, and where to find us for further details.
+Simple yet informational website for [Monoskope](https://github.com/finleap-connect/monoskope) outlining what it is, why we build it, and where to find us for further details.
