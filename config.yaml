@@ -42,7 +42,7 @@ params:
     # Button text
     buttontext: Get started
     # Where the main hero button links to
-    buttonlink: "#"
+    buttonlink: "https://github.com/finleap-connect/monoskope/tree/main/docs"
     # Hero image (from static/images/___)
     image: logos/m8.svg
     # Footer bg (from static/images/illustrations/style/___.svg)
@@ -59,9 +59,9 @@ params:
   - title: Home
     url: /
   - title: Docs
-    url: /
-  - title: Community
-    url: /
+    url: https://github.com/finleap-connect/monoskope/tree/main/docs
+  # - title: Community
+  #   url: /
   # - title: Example
   #   sublinks:
   #   - title: Dropdown item
@@ -71,7 +71,7 @@ params:
   #   - title: Dropdown item
   #     url: /
   - title: Get started
-    url: /
+    url: https://github.com/finleap-connect/monoskope/tree/main/docs
     button: true
   # sidebar:
   #   # Logo (from /images/logos/___.svg)
@@ -189,23 +189,25 @@ params:
         title: "Project"
         links:
         - text: Quick start guide
-          link: /
+          link: https://github.com/finleap-connect/monoskope/tree/main/docs
         - text: Contribution Guide
-          link: /
-        - text: Features
-          link: /
+          link: https://github.com/finleap-connect/monoskope/blob/main/CONTRIBUTING.md
       column2:
         title: "Docs"
         links:
-        - text: API
-          link: /
-        - text: charts
-          link: /
-      column3:
-        title: "Community"
-        links:
-        - text: Logos & Art
-          link: /
+        - text: Development
+          link: https://github.com/finleap-connect/monoskope/blob/main/docs/development
+        - text: Deployment
+          link: https://github.com/finleap-connect/monoskope/blob/main/docs/deployment
+        - text: Operation
+          link: https://github.com/finleap-connect/monoskope/blob/main/docs/operation
+        - text: Usage
+          link: https://github.com/finleap-connect/monoskope/blob/main/docs/usage
+      # column3:
+      #   title: "Community"
+      #   links:
+      #   - text: Logos & Art
+      #     link: /
     copyright: 
       text: © Monoskope Authors 2022
       links:
