@@ -16,7 +16,7 @@ params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy
-  description: Developer Self-Service Across Clusters
+  description: AuthN & AuthZ for Kubernetes multi-cluster, multi-cloud environments.
   # navbarlogo:
   # # Logo (from static/images/logos/___)
   #   image: logos/monoskope.svg
@@ -36,9 +36,9 @@ params:
     brownAccent: ae7c47
   hero:
     # Main hero title
-    title: Developer Self-Service Across Clusters
+    title: AuthN & AuthZ for Kubernetes.
     # Hero subtitle (optional)
-    subtitle: manage and operate Kubernetes multi-cluster environment.
+    subtitle: manage and operate Kubernetes multi-cluster, multi-cloud environments authentication & authorization.
     # Button text
     buttontext: Get started
     # Where the main hero button links to
@@ -116,7 +116,9 @@ params:
         - It fulfills the needs of operators on the clusters as well as the needs of developers using the cloud infrastructure provided by the operators.
       lernMore:
         - title: Monoskope Architecture
-          link: /
+          link: https://github.com/finleap-connect/monoskope/blob/main/docs/diagrams/00-monoskope-architecture.md
+        - title: Data Model
+          link: https://github.com/finleap-connect/monoskope/blob/main/docs/concepts/data-model.md
     features:
     - title: Powerful CLI
       text: It gives your developers a front-end to your internal platform for running Kubernetes.
