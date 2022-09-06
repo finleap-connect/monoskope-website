@@ -5,29 +5,33 @@ include_footer: true
 
 <br>
 
-{{% title3 "Anschrift & Kontakt" %}}
+{{% title3 "Address" %}}
 
 finleap connect GmbH  
-Gaußstraße 190c,  
-22765 Hamburg
+Hohe Bleichen 22, 5th floor  
+20354 Hamburg, Germany  
 
-Tel.: +49 40 228 688 025  
-Email: fcloud-connect@finleap.com
+Email: contact-connect@finleap.com  
+Phone: +49 40 22821271  
 
-{{% subtitle5 "Geschäftsführung" %}}
+{{% title3 "Managing Directors" %}}
 
-Frank Kebsch, Patrick Dittmer, Andreas Reuß
+Frank Kebsch, Andreas Reuß
 
-{{% title3 "Registereintrag" %}}
+{{% title3 "Commercial register" %}}
 
-{{% subtitle5 "Eintragung im Handelsregister" %}}
-  
-Registergericht: Amtsgericht Hamburg  
-Registernummer: HRB 131360  
+Amtsgericht Hamburg, HRB 131360  
+VAT-ID: DE284483308  
 
-{{% subtitle5 "Umsatzsteuer-ID" %}}
+Responsible for journalistic-editorial content according to § 18 (2) MStV: Andreas Reuß, Chief Commercial Officer & Managing Director finleap connect GmbH
 
-Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE284483308
+{{% title3 "External data privacy officer" %}}
+
+Marc Neumann  
+IBS data protection services and consulting GmbH  
+Zirkusweg 1  
+20359 Hamburg, Germany  
+dataprivacy-connect@finleap.com  
 
 {{% title3 "Rechtliche Hinweise" %}}
 
